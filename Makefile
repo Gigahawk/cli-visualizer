@@ -55,7 +55,6 @@ CXX_FLAGS += -dynamic -D_OS_OSX
 # Linux
 else
 CXX_FLAGS += -D_LINUX
-LIBS += -ltinfo
 ifndef ENABLE_PULSE
 CHECK_PULSE=$(shell ldconfig -p | grep libpulse-simple)
 ifeq ($(strip $(CHECK_PULSE)),)
